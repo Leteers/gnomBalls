@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dysaogjwgovai"]
+[gd_scene load_steps=7 format=3 uid="uid://dysaogjwgovai"]
 
 [ext_resource type="Script" path="res://CharacterBody3D.gd" id="1_qdle2"]
 
@@ -9,6 +9,8 @@
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_tid7c"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0d3qh"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_p87bd"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -40,3 +42,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.999785, 0)
 shape = SubResource("CapsuleShape3D_0d3qh")
 
 [node name="Marker3D" type="Marker3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 6.13144)
+mesh = SubResource("CylinderMesh_p87bd")
